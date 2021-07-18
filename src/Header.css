@@ -1,0 +1,78 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  position: static;
+  top: 0;
+  z-index: 100;
+}
+/* 배너는 항상 상단에 위치해야하기때문에 position static, top:0, z-index:겹치는거에 이놈이 우선적으로 보여진다 사용해줘야한다   */
+
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 15px;
+}
+/* 아마존로고의 크기를 컨테이너에 맞게 조절시켜준다 object-fit */
+/* margin 은 2개면 상하 4개면 상하좌우 */
+
+.header_search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.header_searchInput {
+  height: 14px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header_searchIcon {
+  background-color: #cd9042;
+  padding: 5px;
+  height: 15px;
+}
+
+.header_options {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header_optionLineOne {
+  font-size: 10px;
+}
+
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 3px;
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header_optionLineTwoheader_basketCount {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.login {
+  text-decoration: none;
+  color:white;
+}
